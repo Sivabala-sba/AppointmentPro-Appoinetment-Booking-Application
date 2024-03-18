@@ -24,8 +24,8 @@ import lombok.ToString;
 @Entity
 @AllArgsConstructor
 @NoArgsConstructor
-@Getter
-@Setter
+//@Getter
+//@Setter
 @ToString
 public class Doctor {
 
@@ -81,4 +81,142 @@ public class Doctor {
     private Boolean validDoctor = true;
 
     List<Message> listOfMessage = new ArrayList<>();
+
+    //Getter and Setter
+
+    public Integer getDoctorId() {
+        return doctorId;
+    }
+
+    public void setDoctorId(Integer doctorId) {
+        this.doctorId = doctorId;
+    }
+
+    public String getMobileNo() {
+        return mobileNo;
+    }
+
+    public void setMobileNo(String mobileNo) {
+        this.mobileNo = mobileNo;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getSpeciality() {
+        return speciality;
+    }
+
+    public void setSpeciality(String speciality) {
+        this.speciality = speciality;
+    }
+
+    public String getLocation() {
+        return location;
+    }
+
+    public void setLocation(String location) {
+        this.location = location;
+    }
+
+    public Boolean getInsuranceAcceptance() {
+        return insuranceAcceptance;
+    }
+
+    public void setInsuranceAcceptance(Boolean insuranceAcceptance) {
+        this.insuranceAcceptance = insuranceAcceptance;
+    }
+
+    public String getEducation() {
+        return education;
+    }
+
+    public void setEducation(String education) {
+        this.education = education;
+    }
+
+    public String getExperience() {
+        return experience;
+    }
+
+    public void setExperience(String experience) {
+        this.experience = experience;
+    }
+
+    public List<Appointment> getListOfAppointments() {
+        return listOfAppointments;
+    }
+
+    public void setListOfAppointments(List<Appointment> listOfAppointments) {
+        this.listOfAppointments = listOfAppointments;
+    }
+
+    public Integer getAppointmentFromTime() {
+        return appointmentFromTime;
+    }
+
+    public void setAppointmentFromTime(Integer appointmentFromTime) {
+        this.appointmentFromTime = appointmentFromTime;
+    }
+
+    public Integer getAppointmentToTime() {
+        return appointmentToTime;
+    }
+
+    public void setAppointmentToTime(Integer appointmentToTime) {
+        this.appointmentToTime = appointmentToTime;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public List<Review> getListOfReviews() {
+        return listOfReviews;
+    }
+
+    public void setListOfReviews(List<Review> listOfReviews) {
+        this.listOfReviews = listOfReviews;
+    }
+
+    public String getDoctorImg() {
+        return doctorImg;
+    }
+
+    public void setDoctorImg(String doctorImg) {
+        this.doctorImg = doctorImg;
+    }
+
+    public Boolean getValidDoctor() {
+        return validDoctor;
+    }
+
+    public void setValidDoctor(Boolean validDoctor) {
+        this.validDoctor = validDoctor;
+    }
+
+    public List<Message> getListOfMessage() {
+        return listOfMessage;
+    }
+
+    public void setListOfMessage(List<Message> listOfMessage) {
+        this.listOfMessage = listOfMessage;
+    }
 }

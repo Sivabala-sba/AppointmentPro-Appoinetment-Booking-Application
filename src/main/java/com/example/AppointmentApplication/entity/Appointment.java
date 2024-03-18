@@ -30,8 +30,8 @@ import lombok.ToString;
 @Entity
 @AllArgsConstructor
 @NoArgsConstructor
-@Getter
-@Setter
+//@Getter
+//@Setter
 @Component
 @ToString
 public class Appointment {
@@ -69,5 +69,47 @@ public class Appointment {
 
         Appointment other = (Appointment) obj;
         return Objects.equals(appointmentId, other.appointmentId);
+    }
+
+    //Getter and Setter
+
+    public Integer getAppointmentId() {
+        return appointmentId;
+    }
+
+    public void setAppointmentId(Integer appointmentId) {
+        this.appointmentId = appointmentId;
+    }
+
+    public Patient getPatient() {
+        return patient;
+    }
+
+    public void setPatient(Patient patient) {
+        this.patient = patient;
+    }
+
+    public LocalDateTime getAppointmentDateAndTime() {
+        return appointmentDateAndTime;
+    }
+
+    public void setAppointmentDateAndTime(LocalDateTime appointmentDateAndTime) {
+        this.appointmentDateAndTime = appointmentDateAndTime;
+    }
+
+    public Doctor getDoctor() {
+        return doctor;
+    }
+
+    public void setDoctor(Doctor doctor) {
+        this.doctor = doctor;
+    }
+
+    public Review getReview() {
+        return review;
+    }
+
+    public void setReview(Review review) {
+        this.review = review;
     }
 }
