@@ -28,7 +28,6 @@ public class EmailSenderServiceImpl implements EmailSenderService{
 
         javaMailSender.send(simpleMailMessage);
 
-
         return true;
 
     }
