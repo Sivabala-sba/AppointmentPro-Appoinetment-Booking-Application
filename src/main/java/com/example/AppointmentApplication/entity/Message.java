@@ -21,8 +21,6 @@ import javax.print.Doc;
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
-//@Getter
-//@Setter
 public class Message {
 
     @Id

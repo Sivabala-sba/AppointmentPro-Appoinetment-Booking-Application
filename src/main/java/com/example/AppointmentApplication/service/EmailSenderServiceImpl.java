@@ -20,7 +20,7 @@ public class EmailSenderServiceImpl implements EmailSenderService{
 
         SimpleMailMessage simpleMailMessage = new SimpleMailMessage();
 
-        simpleMailMessage.setFrom("balathefriendsba@gmail.com");
+        simpleMailMessage.setFrom("SampleMailId@gmail.com");  //Add your mail Id here
 
         simpleMailMessage.setTo(toEmail);
         simpleMailMessage.setText(emailBody.getEmailBody());

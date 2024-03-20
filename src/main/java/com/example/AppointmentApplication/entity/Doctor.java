@@ -80,6 +80,7 @@ public class Doctor {
 
     private Boolean validDoctor = true;
 
+    @OneToMany
     List<Message> listOfMessage = new ArrayList<>();
 
     //Getter and Setter
